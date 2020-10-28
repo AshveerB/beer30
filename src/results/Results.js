@@ -1,22 +1,29 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Results = () => {
- useEffect(() => {
-	 // const url = 'https://api.openbrewerydb.org/breweries/search?query=Oakland';
-	 // fetch(url)
-	 //   .then(res => res.json())
-	 //   .then(console.log)
-	 //   .catch(console.error)
-	//  return () => {
-	// 	 cleanup
-	//  }
- }, [])
-    return (
-			<div>
-				Results
-			</div>
-		);
+	const [bars, setBars] = useState([]);
+	useEffect(() => {
+		const url =
+			'https://api.openbrewerydb.org/breweries/search?query=Santa_Rosa';
+		fetch(url)
+			.then((res) => res.json())
+			.then((resJson) => {
+				console.log(resJson);
+				setBars(resJson);
+			})
+			.catch(console.error);
+		//  return () => {
+		// 	 cleanup
+		//  }
+	}, []);
+	return (
+		<div>
+			Results
+			{bars.map((bar) => (
+				<h2 key={bar.id}>{bar.name}</h2>
+			))}
+		</div>
+	);
 };
 
 export default Results;
-
