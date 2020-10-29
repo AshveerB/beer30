@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Results from '../results/Results';
 
 const Search = () => {
@@ -8,9 +8,13 @@ const Search = () => {
 	const [formState, setFormState] = useState(initialState);
 
 	const [bars, setBars] = useState([]);
-
-	useEffect(() => {
-		const url = `https://api.openbrewerydb.org/breweries/search?query=Santa_Rosa`;
+	
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		console.log(formState);
+		const api = `https://api.openbrewerydb.org/breweries/search?query=`;
+		const endPoint = formState.searchBar 
+		const url = `${api}${endPoint}`
 		fetch(url)
 			.then((res) => res.json())
 			.then((resJson) => {
@@ -18,19 +22,10 @@ const Search = () => {
 				setBars(resJson);
 			})
 			.catch(console.error);
-		//  return () => {
-		// 	 cleanup
-		//  }
-	}, []);
-
-	const handleSubmit = (event) => {
-		event.preventDefault();
-
-		console.log(formState);
-
+		
 		setFormState(initialState);
 	};
-
+	
 	const handleChange = (event) => {
 		setFormState({ ...formState, [event.target.id]: event.target.value });
 	};
