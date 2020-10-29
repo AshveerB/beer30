@@ -20,7 +20,13 @@ const Results = () => {
 		<div>
 			Results
 			{bars.map((bar) => (
-				<h2 key={bar.id}>{bar.name}</h2>
+				<h2 key={bar.id}>
+					{bar.name}
+					<br />
+					{bar.street}
+					<br />
+					{bar.website_url}
+				</h2>
 			))}
 		</div>
 	);
