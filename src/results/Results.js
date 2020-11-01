@@ -15,4 +15,3 @@ const Results = ({ bars }) => {
 };
 
 export default Results;
-//referenced https://www.npmjs.com/package/react-phone-number/v/1.3.1

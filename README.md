@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Beer30
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+> User an search for bars by their name, type, city or state
 
-In the project directory, you can run:
+## Link to the API you plan to use
 
-### `npm start`
+> https://www.openbrewerydb.org/documentation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Visual of your component hierarchy
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Beerwire](https://media.git.generalassemb.ly/user/29407/files/29026e80-17a5-11eb-988e-d8baca5744ae)
 
-### `npm test`
+## Wire Frames
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Beerwireframes](https://media.git.generalassemb.ly/user/29407/files/85ae5b00-179e-11eb-82c0-28548d80f47f)
 
-### `npm run build`
+### Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Javascript
+- CSS
+- HTML
+- Git
+- GitHub
+- React
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## User Stories
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- As a user I would like to be able search for a bar and get the address back so I can plan a visit.
+- As a user I would like to know what the parameters are for the search field in order to have a more specific search. 
+- As a user I would like to be able to search multiple options for a more specific search.
+- As a user I would to be able to reset the filters so I can change the search.
 
-### `npm run eject`
+### MVP Goals
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Display bar information from search of either name, type, city or state.
+- Have a home component with instructions and a search option.
+- Have a navigation component that takes you back home and to the search page.
+- Style and utilize media queries and make sure pages are accessible.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Stretch Goals
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Add sounds and animations
+- Get directions to bar
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Deployed Game
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Beer30](https://mybeer30.herokuapp.com/)
