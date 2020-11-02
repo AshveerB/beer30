@@ -41,6 +41,7 @@ const Search = () => {
 				/>
 				<button type='submit'>Submit</button>
 			</form>
+			Click On Brewery For More Info! <br/>
 			<Results bars={bars} />
 		</div>
 	);
