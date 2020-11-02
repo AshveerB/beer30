@@ -33,7 +33,7 @@ const Search = () => {
 	return (
 		<div>
 			<form onSubmit={handleSubmit}>
-				<label htmlFor='searchBar'>Enter Key Word: </label>
+				<label htmlFor='searchBar'>Enter Either Name/ Zip Code/ City/ State:  </label><br />
 				<input
 					id='searchBar'
 					onChange={handleChange}

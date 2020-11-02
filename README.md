@@ -29,7 +29,6 @@
 
 - As a user I would like to be able search for a bar and get the address back so I can plan a visit.
 - As a user I would like to know what the parameters are for the search field in order to have a more specific search.
-- As a user I would like to be able to search multiple options for a more specific search.
 - As a user I would to be able to reset the filters so I can change the search.
 
 ### MVP Goals

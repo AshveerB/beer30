@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import PhoneNumber from 'react-phone-number';
+// import GoogleMapReact from 'google-map-react';
 
 const Details = ({ match }) => {
-	const [bar, setBars] = useState('')
+	const [bar, setBars] = useState('');
 	const api = 'https://api.openbrewerydb.org/breweries/';
-	const endPoint = `${match.params.id}`
-	const url = `${api}${endPoint}`
+	const endPoint = `${match.params.id}`;
+	const url = `${api}${endPoint}`;
 	useEffect(() => {
 		fetch(url)
 			.then((res) => res.json())
@@ -13,26 +14,41 @@ const Details = ({ match }) => {
 				setBars(resJson);
 			});
 	}, [url]);
-	console.log(bar);
+	// const location = {
+	// 	address: bar?.street,
+	// 	lat: bar?.latitude,
+	// 	lng: bar?.longitude,
+	// };
 	return (
-		<div>
-			{bar?.name}
+		<div class='details'>
+			Name: {bar?.name}
 			<br />
-			{bar?.street}
+			Type of Bar: {bar?.brewery_type}
 			<br />
-			{bar?.brewery_type}
+			Address: {bar?.street}
 			<br />
 			{bar?.city}, {bar?.state}
 			<br />
 			{bar?.postal_code}
 			<br />
-			<a href={bar?.website_url} target='_blank' rel='noreferrer'>
+			Website: <a href={bar?.website_url} target='_blank' rel='noreferrer'>
 				{bar?.website_url}
 			</a>
 			<br />
-			<PhoneNumber number={bar?.phone} isLinked={true} />
+			Phone Number: <PhoneNumber number={bar?.phone} isLinked={true} />
 			<br />
 			{bar?.country}
+			{/* <GoogleMapReact
+				bootstrapURLKeys={{
+					key: process.env.REACT_APP_GOOGLE_KEY,
+					language: 'en',
+					region: 'US',
+				}}
+				center={location}
+				zoom= "8"
+				>
+					
+				</GoogleMapReact> */}
 		</div>
 	);
 };

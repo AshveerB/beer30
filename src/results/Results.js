@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Results = ({ bars }) => {
 	return (
-		<div>
-			Results
+		<div class='results'>
 			{bars.map((bar) => (
 				<Link to={`/details/${bar.id}`} key={bar.id}>
 					<h2 key={bar.id}>{bar.name}</h2>
