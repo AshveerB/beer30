@@ -8,13 +8,9 @@ User can search for bars by their name, type, city or state
 
 https://www.openbrewerydb.org/documentation
 
-## Visual of your component hierarchy
+## Deployed Site
 
-![hierachy1](https://media.git.generalassemb.ly/user/29407/files/5bc1d080-1c97-11eb-9bbe-0047df6d2425)
-
-## Wire Frames
-
-![Beerwireframes](https://media.git.generalassemb.ly/user/29407/files/85ae5b00-179e-11eb-82c0-28548d80f47f)
+[Beer30](https://mybeer30.herokuapp.com/)
 
 ## Technologies Used
 
@@ -48,6 +44,10 @@ https://www.openbrewerydb.org/documentation
 - Add sounds and animations
 - Get directions to bar
 
-### Deployed Site
+## Visual of your component hierarchy
 
-[Beer30](https://mybeer30.herokuapp.com/)
+![hierachy1](https://media.git.generalassemb.ly/user/29407/files/5bc1d080-1c97-11eb-9bbe-0047df6d2425)
+
+## Wire Frames
+
+![Beerwireframes](https://media.git.generalassemb.ly/user/29407/files/85ae5b00-179e-11eb-82c0-28548d80f47f)

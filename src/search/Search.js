@@ -11,7 +11,6 @@ const Search = () => {
 	
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		console.log(formState);
 		const api = `https://api.openbrewerydb.org/breweries/search?query=`;
 		const endPoint = formState.searchBar 
 		const url = `${api}${endPoint}`
