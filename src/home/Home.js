@@ -7,7 +7,7 @@ const Home = () => {
 		<div class='home'>
 			<span class='welcome'>Welcome To Beer30!</span>
 			<span class='video'>
-				<ReactPlayer url='https://www.youtube.com/watch?v=VuMwpfqHyZ0' />{' '}
+				<ReactPlayer url='https://www.youtube.com/watch?v=VuMwpfqHyZ0' width='350px'/>{' '}
 			</span>
 			<h2 className='howTo'>
 				Click Search To Find Your Favorite Brewery By Name! Or Get A List Of
