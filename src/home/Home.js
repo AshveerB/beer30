@@ -9,7 +9,7 @@ const Home = () => {
 			<span class='video'>
 				<ReactPlayer url='https://www.youtube.com/watch?v=VuMwpfqHyZ0' />{' '}
 			</span>
-			<h2>
+			<h2 className='howTo'>
 				Click Search To Find Your Favorite Brewery By Name! Or Get A List Of
 				Breweries By Zip Code, City Or State!
 			</h2>

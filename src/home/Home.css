@@ -1,0 +1,39 @@
+@media only screen and (max-width: 600px) {
+    .welcome {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .video {
+        width: 100%;
+        object-fit: cover;
+    }
+    .howTo {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .welcome {
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .video {
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+    }
+    .howTo {
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .welcome {
+        font-size: 55px;
+    }
+}
