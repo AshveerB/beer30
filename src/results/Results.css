@@ -1,0 +1,29 @@
+.results {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bar {
+    justify-content: space-around;
+    width: 220px;
+    height: 150px;
+    color: blueviolet;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .bar {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .bar {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .bar {
+        font-size: 35px;
+    }
+}
