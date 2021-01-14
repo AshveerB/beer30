@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PhoneNumber from 'react-phone-number';
+import './Details.css'
 // import GoogleMapReact from 'google-map-react';
 
 const Details = ({ match }) => {

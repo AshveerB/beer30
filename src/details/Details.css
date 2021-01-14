@@ -1,0 +1,33 @@
+.details {
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .details {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .details {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .details {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .details {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .details {
+        font-size: 40px;
+    }
+}
