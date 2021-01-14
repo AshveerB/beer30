@@ -7,7 +7,7 @@ const Results = ({ bars }) => {
 		<div class='results'>
 			{bars.map((bar) => (
 				<Link to={`/details/${bar.id}`} key={bar.id}>
-					<h2 key={bar.id} className='bar'>{bar.name}</h2>
+					<h2 key={bar.id} className='bar hvr-grow'>{bar.name}</h2>
 				</Link>
 			))}
 		</div>
