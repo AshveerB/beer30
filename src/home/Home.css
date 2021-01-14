@@ -7,11 +7,12 @@
     .video {
         width: 100%;
         object-fit: cover;
+        display: flex;
+        justify-content: center;
     }
     .howTo {
         font-size: 30px;
         text-align: center;
-        justify-content: center;
     }
 }
 
