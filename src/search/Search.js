@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Results from '../results/Results';
+import './Search.css'
 
 const Search = () => {
 	const initialState = {
@@ -31,16 +32,22 @@ const Search = () => {
 
 	return (
 		<div>
-			<form onSubmit={handleSubmit}>
-				<label htmlFor='searchBar'>Enter Either Name/ Zip Code/ City/ State:  </label><br />
-				<input
-					id='searchBar'
-					onChange={handleChange}
-					value={formState.searchBar}
-				/>
-				<button type='submit'>Submit</button>
-			</form>
-			Click On Brewery For More Info! <br/>
+			<div className='searchForm'>
+				<form onSubmit={handleSubmit}>
+					<label htmlFor='searchBar' className='searchBarLabel'>
+						Enter Either Name/ Zip Code/ City/ State:{' '}
+					</label>
+					<br />
+					<input
+						id='searchBar'
+						onChange={handleChange}
+						value={formState.searchBar}
+						className='searchBarInput'
+					/>
+					<button type='submit' className='submitBtn'>Submit</button>
+				</form>
+			</div>
+			<div className='moreInfo'>Click On Brewery For More Info!</div> <br />
 			<Results bars={bars} />
 		</div>
 	);
