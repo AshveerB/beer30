@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navigation.css'
 
 const Navigation = () => {
     return (
-			<div>
+			<div className='navigation'>
 				<span class='homeBtn'>
 					<Link to='/home'>Home</Link>
 				</span>

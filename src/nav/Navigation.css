@@ -1,0 +1,25 @@
+.navigation {
+    display: flex;
+    justify-content: center
+}
+
+@media only screen and (max-width: 600px) {
+    .homeBtn {
+        font-size: 30px;
+        margin-right: 20px
+    }
+    .searchBtn {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .homeBtn {
+        font-size: 35px;
+        margin-right: 20px;
+    }
+    .searchBtn {
+        font-size: 35px;
+    }
+}
+
