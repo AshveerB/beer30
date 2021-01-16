@@ -5,10 +5,10 @@ import './Navigation.css'
 const Navigation = () => {
     return (
 			<div className='navigation'>
-				<span class='homeBtn'>
+				<span class='homeBtn hvr-grow'>
 					<Link to='/home'>Home</Link>
 				</span>
-				<span class='searchBtn'>
+				<span class='searchBtn hvr-grow'>
 					<Link to='/search'>Search</Link>
 				</span>
 			</div>
