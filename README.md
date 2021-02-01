@@ -10,6 +10,9 @@ https://www.openbrewerydb.org/documentation
 
 ## Deployed Site
 
+Netlify Deployment
+[Beer30](https://mybeer30.netlify.app/)
+Heroku Deployment
 [Beer30](https://mybeer30.herokuapp.com/)
 
 ## Technologies Used
